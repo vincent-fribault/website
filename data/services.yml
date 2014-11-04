@@ -1,0 +1,57 @@
+-
+  name: "Photographie"
+  description: "Portrait entreprise et familiale, reportage entreprise"
+  type: "photo"
+  projects:
+    -
+      title: "Coprs-texte, performance dansé"
+      content: "contenu"
+      img: "corps-texte.jpg"
+      link: "https://plus.google.com/photos/116757263616239309895/albums/5992891728595089825"
+    -
+      title: "2014 Péche en Loire avec Alexandre"
+      content: "Contenu"
+      img: "peche_en_loire.jpg"
+      link: "https://plus.google.com/photos/116757263616239309895/albums/5985450364433127537"
+-
+  name: "Audio"
+  description: "Audiodescription, création et montage sonore"
+  type: "audio"
+  projects:
+    -
+      title: "Audio description de Chamalow"
+      content: "Pas de description"
+      type: "vimeo"
+      id: "109499390"
+      link: "http://vimeo.com/109499390"
+    -
+      title: "Test de soundcloud"
+      content: "Une description"
+      type: "soundcloud"
+      id: "173752179"
+      link: "https://soundcloud.com/octobersveryown/drake-6-god"
+    -
+      title: "Sans visuel audio"
+      content: "Encore une description"
+      link: "http://www.youtube.com/watch?feature=player_embedded&v=lcMM2BpblKs"
+-
+  name: "Vidéo"
+  description: "Réalisation de teaser, film d’entreprise, com institutionnelle, pour mettre en valeur vos projets, vos créations"
+  type: "video"
+  projects:
+    -
+      title: "Teaser - LA FEMME SQUELETTE"
+      content: "Encore une description"
+      type: "youtube"
+      id: "lcMM2BpblKs"
+      link: "http://www.youtube.com/watch?feature=player_embedded&v=lcMM2BpblKs"
+    -
+      title: "VIMEO"
+      content: "Encore une description"
+      type: "vimeo"
+      id: "109499390"
+      link: "http://www.youtube.com/watch?feature=player_embedded&v=lcMM2BpblKs"
+    -
+      title: "Sans visuel video"
+      content: "Encore une description"
+      link: "http://www.youtube.com/watch?feature=player_embedded&v=lcMM2BpblKs"

@@ -1,0 +1,50 @@
+---
+title: Vincent Fribault - Technicien audiovisuel
+---
+
+%header
+  %nav#menu
+    =link_to "Vincent Fribault", "#", class: "title"
+    =link_to "Photo", "#photo"
+    =link_to "Audio", "#audio"
+    =link_to "Vidéo", "#video"
+%section#about
+  .intro
+    %h2
+      :markdown
+        Technicien audiovisuel, je travaille tel un artisan dans les domaines audiovisuels. N'hésitez pas à me **contacter** pour vos projets
+- data.services.each do |service|
+  %section{class: "services", id: "#{service.type}"}
+    %header
+      %div.intro
+        %h2
+          = service.name
+        %p
+          = service.description
+      %i.picto
+    %section.works
+      - service.projects.each do |project|
+        %article
+          .promotion
+            - if project.img
+              .photo-wrapper
+                = image_tag project.img
+            - else
+              - case project.type
+              - when "vimeo"
+                .video-wrapper
+                  <iframe src="//player.vimeo.com/video/#{project.id}?title=0&amp;byline=0&amp;portrait=0&amp;color=22A7F0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              - when "youtube"
+                .video-wrapper
+                  <iframe src="//www.youtube.com/embed/#{project.id}?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+              - when "soundcloud"
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/#{project.id}&amp;color=22A7F0&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false"></iframe>
+              - else
+                .photo-wrapper
+                  = image_tag lorem.image('520x300', :text => 'Aucun aperçu')
+          .content
+            %h3
+              = project.title
+            %p
+              = project.content
+%footer

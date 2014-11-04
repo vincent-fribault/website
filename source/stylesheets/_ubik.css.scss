@@ -1,0 +1,158 @@
+$grey: #F3F3F3;
+$photo: #0578A3;
+$audio: #22A7F0;
+$video: #20BBE9;
+
+header {
+  position: relative;
+  color: white;
+  background-color: black;
+  a {
+    color: white;
+  }
+}
+
+.picto {
+  position: absolute;
+  bottom: -65px;
+  left: 46.5%;
+  height: 133px;
+  width: 133px;
+}
+
+footer {
+  @include outer-container;
+}
+
+.intro {
+  @include outer-container;
+  text-align: center;
+}
+
+#menu {
+  text-align: center;
+  a {
+    margin-right: 0.5em;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.title {
+  font-size: 1.25em;
+  font-weight: bold;
+  padding-right: 1.25em;
+}
+
+// Services
+
+.services {
+  header {
+    padding: 5em 30% 8em;
+    h2 {
+      text-transform: uppercase;
+    }
+    p {
+      font-family: serif;
+      font-style: italic;
+      font-size: 1.25em;
+      color: rgba(255, 255, 255, 0.5)
+    }
+  }
+  article {
+    @include span-columns(12);
+    margin-bottom: 2em;
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+  section {
+    @include outer-container;
+    padding: 0.5em;
+    @include media($large-screen) {
+      padding: 8em 1em 3em 1em;
+    }
+  }
+}
+
+// articles
+
+.promotion {
+  margin: auto;
+  @include media($large-screen) {
+    @include span-columns(6 of 12);
+  }
+}
+
+.content {
+  @include media($large-screen) {
+    @include span-columns(6 of 12);
+  }
+}
+
+// Images
+
+.photo-wrapper {
+  text-align: center;
+}
+
+// Audio
+
+
+
+// Vidéos
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; // For ratio 16:9. 75% if ratio is 4:3
+  height: 0;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+
+//// Theme sections
+
+#about {
+  background-color: $grey;
+  padding: 2em;
+  h2 {
+    //font-size: 1.3em;
+    font-weight: normal;
+    //line-height: 1.5em;
+  }
+}
+
+#photo {
+  header {
+    background-color: $photo;
+    .picto {
+      background: url("../images/photo.png") 0 0 no-repeat;
+    }
+  }
+}
+
+#audio {
+  header {
+    background-color: $audio;
+    .picto {
+      background: url("../images/audio.png") 0 0 no-repeat;
+    }
+  }
+}
+
+#video {
+  header {
+    background-color: $video;
+    .picto {
+      background: url("../images/video.png") 0 0 no-repeat;
+    }
+  }
+}

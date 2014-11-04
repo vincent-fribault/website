@@ -2,17 +2,16 @@
 title: Vincent Fribault - Technicien audiovisuel
 ---
 
-%header
-  %nav#menu
-    =link_to "Vincent Fribault", "#", class: "title"
-    =link_to "Photo", "#photo"
-    =link_to "Audio", "#audio"
-    =link_to "Vidéo", "#video"
+%header.navigation
+  %nav
+    =link_to "Vincent Fribault", "#", id: "title"
+    %code=link_to "Photo", "#photo"
+    %code=link_to "Audio", "#audio"
+    %code=link_to "Vidéo", "#video"
 %section#about
   .intro
     %h2
-      :markdown
-        Technicien audiovisuel, je travaille tel un artisan dans les domaines audiovisuels. N'hésitez pas à me **contacter** pour vos projets
+      Technicien audiovisuel, je travaille tel un artisan dans les domaines audiovisuels. N'hésitez pas à me <b>contacter</b> pour vos projets
 - data.services.each do |service|
   %section{class: "services", id: "#{service.type}"}
     %header

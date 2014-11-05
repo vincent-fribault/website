@@ -4,15 +4,15 @@
   type: "photo"
   projects:
     -
-      title: "Coprs-texte, performance dansé"
-      content: "Aucun contenu"
-      img: "corps-texte.jpg"
-      link: "https://plus.google.com/photos/116757263616239309895/albums/5992891728595089825"
-    -
       title: "2014 Péche en Loire avec Alexandre"
-      content: "Aucun contenu"
+      content: "Reportage pêche en Loire. C'est entre deux averses, qu'Alexandre Fargat m'a convié à le suivre pour une pêche à la lamproie sur la Loire. Un fort vent d'ouest remonte la vallée, mais le soleil est au rendez-vous."
       img: "peche_en_loire.jpg"
       link: "https://plus.google.com/photos/116757263616239309895/albums/5985450364433127537"
+    -
+      title: "Soirée Rajasthan"
+      content: "Orientales 27 juin 2013 St. Florent"
+      img: "soiree_rajasthan.jpg"
+      link: "https://plus.google.com/photos/116757263616239309895/albums/5895671854565906577"
 -
   name: "Audio"
   description: "Audiodescription, création et montage sonore"
@@ -20,18 +20,30 @@
   projects:
     -
       title: "Audio description de Chamalow"
-      content: "Aucun contenu"
+      content: 'Audiodescription réalisé en collaboration avec <a href="http://desimagesdesmots.com/" target="_blank">Yannick Lemoine-Maulny</a> sur un film de Tarik Ben Salah (Handimaine)'
       type: "vimeo"
       id: "109499390"
       link: "http://vimeo.com/109499390"
+    -
+      title: "D'une salle à l'autre"
+      content: 'Audiodescription réalisé avec <a href="http://desimagesdesmots.com/" target="_blank">Des Images, Des Mots - Yannick LEMOINE-MAULNY</a> sur un film de Mathieu Delalle (Olalune.net)'
+      type: "vimeo"
+      id: "107831809"
+      link: "http://vimeo.com/107831809"
 -
   name: "Vidéo"
   description: "Réalisation de teaser, film d’entreprise, com institutionnelle, pour mettre en valeur vos projets, vos créations"
   type: "video"
   projects:
     -
-      title: "La femme squelette (teaser)"
-      content: "Aucun contenu"
+      title: "Amnesie Liveshow @LeQuai Angers"
+      content: "Live report de l’artiste électro Amnésie au Quai à Angers octobre 2014"
+      type: "youtube"
+      id: "mDaqSBnkznk"
+      link: "https://www.youtube.com/watch?v=mDaqSBnkznk"
+    -
+      title: "La femme squelette"
+      content: "Teaser pour la compagnie Les Monstreuses 2014"
       type: "youtube"
       id: "lcMM2BpblKs"
       link: "http://www.youtube.com/watch?feature=player_embedded&v=lcMM2BpblKs"

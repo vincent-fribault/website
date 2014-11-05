@@ -80,7 +80,10 @@ footer {
 .services {
   header {
     position: relative;
-    padding: 4em 30% 7em;
+    padding: 4em 5% 7em;
+    @include media($large-screen) {
+      padding: 4em 30% 7em;
+    }
     h2 {
       text-transform: uppercase;
     }
@@ -157,8 +160,6 @@ footer {
   background-color: $grey;
   padding: 2em 0;
   h2 {
-    //font-size: 1.8em;
-    //font-weight: normal;
     margin: 0 5%;
   }
   blockquote {

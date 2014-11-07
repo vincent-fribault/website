@@ -59,7 +59,7 @@ footer {
         text-decoration: underline;
         color: white;
       }
-      margin-right: 0.5em;
+      margin-right: 0.9em;
       &:last-child {
         margin-right: 0;
       }
@@ -227,5 +227,28 @@ footer {
       color: $video;
       text-decoration:underline;
     }
+  }
+}
+
+#bio {
+  @include outer-container;
+  .content {
+    margin-top: 5em;
+    padding: 0 0.5em;
+    @include media($large-screen) {
+      margin-top: 3em;
+      font-size: 1.2em;
+      @include span-columns(8);
+      @include shift(2);
+    }
+  }
+}
+
+.photo-right {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  @include media($large-screen) {
+    float:right;
   }
 }

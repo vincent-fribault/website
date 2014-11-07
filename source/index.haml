@@ -31,7 +31,8 @@ title: Vincent Fribault - Photographie et prestation audiovisuelle
           .promotion
             - if project.img
               .photo-wrapper
-                = image_tag project.img
+                %a{href: project.link, target: "_blank"}
+                  = image_tag project.img
             - else
               - case project.type
               - when "vimeo"

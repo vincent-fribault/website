@@ -167,6 +167,21 @@ footer {
     font-size: 1.25em;
     font-family: serif;
     font-style: italic;
+    border-left: none;
+    @include media($large-screen) {
+      position: relative;
+      padding-left: 3em;
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "“";
+        font-family: serif;
+        font-size: 5em;
+        line-height: 0.9em;
+        color: rgba(0,0,0,0.3);
+      }
+    }
   }
 }
 
@@ -175,6 +190,12 @@ footer {
     background-color: $photo;
     .picto {
       background: url("../images/photo.png") 0 0 no-repeat;
+    }
+  }
+  .content {
+    a {
+      color: $photo;
+      text-decoration:underline;
     }
   }
 }
@@ -186,6 +207,12 @@ footer {
       background: url("../images/audio.png") 0 0 no-repeat;
     }
   }
+  .content {
+    a {
+      color: $audio;
+      text-decoration:underline;
+    }
+  }
 }
 
 #video {
@@ -193,6 +220,12 @@ footer {
     background-color: $video;
     .picto {
       background: url("../images/video.png") 0 0 no-repeat;
+    }
+  }
+  .content {
+    a {
+      color: $video;
+      text-decoration:underline;
     }
   }
 }

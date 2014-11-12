@@ -185,47 +185,19 @@ footer {
   }
 }
 
-#photo {
-  header {
-    background-color: $photo;
-    .picto {
-      background: url("../images/photo.png") 0 0 no-repeat;
+@each $service, $color in (photo, $photo), (audio, $audio), (video, $video) {
+  ##{$service} {
+    header {
+      background-color: $color;
+      .picto {
+        background: url("../images/#{$service}.png") 0 0 no-repeat;
+      }
     }
-  }
-  .content {
-    a {
-      color: $photo;
-      text-decoration:underline;
-    }
-  }
-}
-
-#audio {
-  header {
-    background-color: $audio;
-    .picto {
-      background: url("../images/audio.png") 0 0 no-repeat;
-    }
-  }
-  .content {
-    a {
-      color: $audio;
-      text-decoration:underline;
-    }
-  }
-}
-
-#video {
-  header {
-    background-color: $video;
-    .picto {
-      background: url("../images/video.png") 0 0 no-repeat;
-    }
-  }
-  .content {
-    a {
-      color: $video;
-      text-decoration:underline;
+    .content {
+      a {
+        color: $color;
+        text-decoration: underline;
+      }
     }
   }
 }

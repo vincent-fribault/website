@@ -132,6 +132,8 @@ footer {
 }
 
 .content {
+  margin-top: 0.5em;
+  margin-bottom: 2em;
   @include media($large-screen) {
     @include span-columns(6 of 12);
   }

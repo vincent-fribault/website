@@ -42,7 +42,8 @@ title: Vincent Fribault - Photographie et prestation audiovisuelle
                   = image_tag lorem.image('520x300', :text => 'Aucun aperçu')
           .content
             %h3
-              = project.title
+              %a{href: project.link, target: "_blanck", style: "color: #333; text-decoration: none;"}
+                = project.title
             %p
               = project.content
 %footer

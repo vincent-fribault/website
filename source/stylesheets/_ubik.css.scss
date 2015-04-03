@@ -161,11 +161,8 @@ footer {
 //// Theme sections
 
 #about {
-  display: flex;
-  align-items: center;
   background-color: $grey;
-  //padding: 2em 0;
-  height: 90vh;
+  padding: 2em 0;
   h2 {
     margin: 0 5%;
   }

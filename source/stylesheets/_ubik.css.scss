@@ -20,11 +20,19 @@ header {
 
 .picto {
   position: absolute;
-  bottom: -65px;
+  bottom: -40px;
   left: 50%;
-  height: 133px;
-  width: 133px;
-  margin-left: -66.5px;
+  height: 80px;
+  width: 80px;
+  margin-left: -40px;
+  @include media($large-screen) {
+    position: absolute;
+    bottom: -65px;
+    left: 50%;
+    height: 133px;
+    width: 133px;
+    margin-left: -66.5px;
+  }
 }
 
 footer {
@@ -194,7 +202,10 @@ footer {
     header {
       background-color: $color;
       .picto {
-        background: url("../images/#{$service}.png") 0 0 no-repeat;
+        background: url("../images/#{$service}-nav.png") 0 0 no-repeat;
+        @include media($large-screen) {
+          background: url("../images/#{$service}.png") 0 0 no-repeat;
+        }
       }
     }
     .content {

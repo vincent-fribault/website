@@ -18,6 +18,4 @@ gem "bourbon"
 gem "neat"
 
 # Deploy github-pages
-gem "middleman-gh-pages"
-# todo: any choice to deploy (absolutly)
-# gem 'middleman-deploy', '~> 1.0'
+gem 'middleman-deploy', '~> 1.0'

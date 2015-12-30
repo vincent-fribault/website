@@ -19,3 +19,6 @@ gem "neat"
 
 # Deploy github-pages
 gem 'middleman-deploy', '~> 1.0'
+
+# awesome icon
+gem 'font-awesome-sass'

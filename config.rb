@@ -69,10 +69,11 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+
+  # Deploiement configuration
+  activate :deploy do |deploy|
+    deploy.deploy_method = :git
+    deploy.build_before = true
+  end
 end
 
-# Deploiement configuration
-activate :deploy do |deploy|
-  deploy.deploy_method = :git
-  deploy.build_before = true
-end

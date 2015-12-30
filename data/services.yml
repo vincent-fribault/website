@@ -4,29 +4,34 @@
   type: "photo"
   projects:
     -
+      title: "Photo d’illustration web"
+      content: "Photo réalisé pour illustrer l’implantation d’une entreprise dans une ville de l’Ouest"
+      img: "Pont.jpg"
+      link: "http://www.groupe-artic-solutions.fr"
+    -
+      title: "Reportage pour le département du Maine et Loire"
+      content: "Pour l’archivage et les communications print et web de l’action culturel du département"
+      img: "Danse.jpg"
+      link: ""
+    -
       title: "2014 Péche en Loire avec Alexandre"
       content: "Reportage pêche en Loire. C'est entre deux averses, qu'Alexandre Fargat m'a convié à le suivre pour une pêche à la lamproie sur la Loire. Un fort vent d'ouest remonte la vallée, mais le soleil est au rendez-vous."
       img: "peche_en_loire.jpg"
       link: "https://plus.google.com/photos/116757263616239309895/albums/5985450364433127537"
-    -
-      title: "Soirée Rajasthan"
-      content: "Festival les Orientales 27 juin 2013 Saint Florent le Vieil"
-      img: "soiree_rajasthan.jpg"
-      link: "https://plus.google.com/photos/116757263616239309895/albums/5895671854565906577"
 -
   name: "Audio"
   description: "Audiodescription, création et montage sonore"
   type: "audio"
   projects:
     -
-      title: "Audio description de Chamalow"
-      content: 'Audiodescription réalisé en collaboration avec <a href="http://desimagesdesmots.com/" target="_blank">Yannick Lemoine-Maulny</a> sur un film de Tarik Ben Salah (Handimaine)'
+      title: "Les évolutions règlementaire en banque et assurances"
+      content: "Une animation qui présente une méthode en animation Motion Design pour la banque du Crédit Agricole, réalisé en lien avec le Studio Bouton pour l'agence Mediapilote.<br >Mon travail a consisté à réfléchir aux choix des musiques, du ton de la narration et de la tonalité des effets sonores pour garder la cohésion images/sons et pour renforcer la compréhension du propos adressé aux agents concernés (dynamisme, ponctuations des étapes de la méthode).<br />Et aussi au suivie de la partie son du projet (lien entre agences, studios et comédiens voix). <br />Les travaux de recherche et de création sonore, ainsi que de mixage des différents éléments (Voix, musiques et effets sonores) ont été réalisés une fois le film en motion design terminé.<br />Pour des raisons de confidentialité, seul le début et la fin de l'animation sont présenté ici."
       type: "vimeo"
-      id: "109499390"
-      link: "http://vimeo.com/109499390"
+      id: "141047943"
+      link: "https://vimeo.com/141047943"
     -
       title: "D'une salle à l'autre"
-      content: 'Audiodescription réalisé avec <a href="http://desimagesdesmots.com/" target="_blank">Des Images, Des Mots - Yannick LEMOINE-MAULNY</a> sur un film de Mathieu Delalle (Olalune.net)'
+      content: 'Audiodescription réalisé avec <a href="https://vimeo.com/channels/805590" target="_blank">Des Images, Des Mots - Yannick LEMOINE-MAULNY</a> sur un film de Mathieu Delalle (Olalune.net) pour le musée des beaux arts d’Angers.'
       type: "vimeo"
       id: "107831809"
       link: "http://vimeo.com/107831809"
@@ -37,13 +42,13 @@
   projects:
     -
       title: "L'identité sonore de cheminée Poujoulat"
-      content: "Vidéo pour Audiotactic 2014"
+      content: "Film réalisé pour l’agence Audiotactic"
       type: "youtube"
       id: "HmmscGuFYQg"
       link: "https://www.youtube.com/watch?v=HmmscGuFYQg"
     -
-      title: "La femme squelette"
-      content: "Teaser pour la compagnie Les Monstreuses 2014"
+      title: "Osez le bénévolat !"
+      content: "Film réalisé pour la mise en valeur de l’action bénévole au sein d’une maison de quartier à Angers"
       type: "youtube"
-      id: "lcMM2BpblKs"
-      link: "http://www.youtube.com/watch?feature=player_embedded&v=lcMM2BpblKs"
+      id: "R2-t47u9SUw"
+      link: "http://www.youtube.com/watch?feature=player_embedded&v=R2-t47u9SUw"

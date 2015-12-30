@@ -73,6 +73,6 @@ end
 
 # Deploiement configuration
 activate :deploy do |deploy|
-  deploy.deploy_method = :git
+  deploy.method = :git
   deploy.build_before = true
 end

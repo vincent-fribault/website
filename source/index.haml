@@ -2,46 +2,48 @@
 title: Vincent Fribault - Photographie et prestation audiovisuelle
 ---
 
-%section#about
-  .intro
-    %h2 Photographie et prestation audiovisuelle
-    %blockquote
-      :markdown
-        A l'écoute, ouvert aux attentes de ceux pour qui je travaille, je place mes compétences techniques et artistiques au service du talent de votre entreprise.
-- data.services.each do |service|
-  %section{class: "services", id: "#{service.type}"}
-    %header
-      %div.intro
-        %h2
-          = service.name
-        %p
-          = service.description
-      %i.picto
-    %section.works
-      - service.projects.each do |project|
-        %article
-          .promotion
-            - if project.img
-              .photo-wrapper
-                %a{href: project.link, target: "_blank"}
-                  = image_tag project.img
-            - else
-              - case project.type
-              - when "vimeo"
-                .video-wrapper
-                  <iframe src="//player.vimeo.com/video/#{project.id}?title=0&amp;byline=0&amp;portrait=0&amp;color=22A7F0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-              - when "youtube"
-                .video-wrapper
-                  <iframe src="//www.youtube.com/embed/#{project.id}?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-              - when "soundcloud"
-                <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/#{project.id}&amp;color=22A7F0&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false"></iframe>
-              - else
+%div{:itemscope => true, :itemtype => "http://schema.org/Service"}
+  %meta{ :itemprop => "serviceType", :content => "Photographie et prestation audiovisuelle"}
+  %section#about
+    .intro
+      %h2{:itemprop => "name"} Photographie et prestation audiovisuelle
+      %blockquote
+        :markdown
+          A l'écoute, ouvert aux attentes de ceux pour qui je travaille, je place mes compétences techniques et artistiques au service du talent de votre entreprise.
+  - data.services.each do |service|
+    %section{class: "services", id: "#{service.type}", :itemprop => "itemOffered", :itemscope => true, :itemtype => "http://schema.org/Service"}
+      %header
+        %div.intro
+          %h2
+            = service.name
+          %p{:itemprop => "name"}
+            = service.description
+        %i.picto
+      %section.works
+        - service.projects.each do |project|
+          %article
+            .promotion
+              - if project.img
                 .photo-wrapper
-                  = image_tag lorem.image('520x300', :text => 'Aucun aperçu')
-          .content
-            %h3
-              %a{href: project.link, target: "_blanck", style: "color: #333; text-decoration: none;"}
-                = project.title
-            %p
-              = project.content
+                  %a{href: project.link, target: "_blank"}
+                    = image_tag project.img
+              - else
+                - case project.type
+                - when "vimeo"
+                  .video-wrapper
+                    <iframe src="//player.vimeo.com/video/#{project.id}?title=0&amp;byline=0&amp;portrait=0&amp;color=22A7F0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                - when "youtube"
+                  .video-wrapper
+                    <iframe src="//www.youtube.com/embed/#{project.id}?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                - when "soundcloud"
+                  <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/#{project.id}&amp;color=22A7F0&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false"></iframe>
+                - else
+                  .photo-wrapper
+                    = image_tag lorem.image('520x300', :text => 'Aucun aperçu')
+            .content
+              %h3
+                %a{href: project.link, target: "_blanck", style: "color: #333; text-decoration: none;"}
+                  = project.title
+              %p
+                = project.content
 %footer

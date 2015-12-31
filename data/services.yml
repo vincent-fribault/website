@@ -1,6 +1,6 @@
 -
   name: "Photographie"
-  description: "Portrait entreprise et familiale, reportage entreprise"
+  description: "Photographie industrielle, illustration de vos activités et trombinoscope. Reportage photo événementiel (conférences, salons, séminaires) à destination des entreprises, des agences de com., de l'institutionnel et collectivités"
   type: "photo"
   projects:
     -
@@ -14,13 +14,13 @@
       img: "Danse.jpg"
       link: ""
     -
-      title: "Pêche en Loire avec Alexandre"
+      title: "Pêche à la lamproie avec Alexandre"
       content: "Reportage pêche en Loire. C'est entre deux averses, qu'Alexandre Fargat m'a convié à le suivre pour une pêche à la lamproie sur la Loire. Un fort vent d'ouest remonte la vallée, mais le soleil est au rendez-vous."
       img: "peche_en_loire.jpg"
       link: "https://plus.google.com/photos/116757263616239309895/albums/5985450364433127537"
 -
   name: "Audio"
-  description: "Audiodescription, création et montage sonore"
+  description: "Création, montage son et habillage sonore pour vos projets vidéo d’animation (motion design, animation 2d/3d, infographie et diaporama pour formation professionnelle, salon et conférence)"
   type: "audio"
   projects:
     -

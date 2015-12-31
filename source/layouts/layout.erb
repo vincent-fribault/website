@@ -17,5 +17,25 @@
   <body class="<%= page_classes %>">
     <%= partial "header" %>
     <%= yield %>
+    
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Angers",
+          "addressRegion": "Maine-et-Loire",
+          "postalCode": "49100",
+          "streetAddress": "30 rue des Lices"
+        },
+        "email": "mailto:vincent.fribault@laposte.net",
+        "image": "./images/VincentFribault.png",
+        "jobTitle": "Photographe et technicien audiovisuel",
+        "name": "Vincent Fribault",
+        "telephone": "06 73 47 69 08",
+        "url": "http://vincent-fribault.fr"
+      }
+    </script>
   </body>
 </html>

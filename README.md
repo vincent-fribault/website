@@ -35,5 +35,5 @@ git push
 et déployer :
 
 ```sh
-bundle exec rake publish ALLOW_DIRTY=true
+bundle exec middleman deploy
 ```
